@@ -1,0 +1,336 @@
+body {
+    background: linear-gradient(145deg, #dce1dd, #ffffff);
+    margin: 0; /*removes defult margin*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7B4B3A;
+}
+
+h3{
+    color: #5f7063;
+}
+
+p{
+    color:black;
+}
+
+/*--- hero --- */
+.hero {
+    width: 100%;
+    height:700px;
+    margin-bottom:60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position:relative;
+    background: linear-gradient(145deg, #5f7063, #718576);
+    box-shadow:  4px 4px 8px #cfd5d1,
+    -4px -4px 8px #ffffff;
+}
+
+/* .hero-blur{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:25%;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(8px);
+    z-index:1;
+} */
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-text{
+    position:absolute;
+   bottom:230px;
+    left:160px;
+    text-align:left;
+    padding:20px;
+    color:white;
+    z-index:2;
+}
+
+.hero-text h1{
+    font-size: 60px;
+}
+
+.hero-text p{
+    font-size: 30px;
+    color:white;
+}
+
+/*---  cards --- */
+.parent {
+    display: grid; /*grid layout*/
+    grid-template-columns: repeat(3, 1fr); /*3 equal columns*/
+    gap: 70px; /*space between columns */
+    width: 80%;
+    margin: 20px auto; /* center grid and space it out*/
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #dce1dd, #ffffff);
+  box-shadow: 4px 4px 8px #cfd5d1, -4px -4px 8px #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.card:hover{
+    transform: translateY(-10px); 
+    box-shadow: 6px 6px 12px #c2c8c4, -6px -6px 12px #ffffff; 
+    background: linear-gradient(145deg, #afbcb1, #d0e0d3);
+}
+.card img {
+    width: 100%;
+    height: 384px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.card h3,
+.card p {
+    margin: 20px 0px;
+    z-index:2;
+}
+
+
+
+
+/*--- hero on blog pages--- */
+.hero-page {
+    width: 100%;
+    height:500px;
+    margin: 0 auto;
+    margin-bottom:60px;
+    overflow: hidden;
+    position:relative;
+    box-shadow:  4px 4px 8px #cfd5d1,
+    -4px -4px 8px #ffffff;
+}
+
+
+
+.hero-page img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:blur(10px) brightness(60%);;
+}
+
+.hero-page-text{
+    position:absolute;
+   bottom:100px;
+    left:290px;
+    text-align:left;
+    padding:20px;
+    color:white;
+    z-index:2;
+}
+
+.hero-page-text h1{
+    font-size: 60px;
+}
+
+.hero-page-text p{
+    font-size: 30px;
+    color:white;
+}
+
+/*---  weekly blog page content --- */
+
+.content {
+    width: 90%;
+    max-width:900px;
+    border-radius:15px;
+    margin: 0 auto 80px auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(145deg, #F5FAF2, #ffffff);
+    box-shadow:  4px 4px 8px #cfd5d1;
+    padding:40px;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin: 40px 0 20px;
+  color: #fff;
+  background-color: #5f7063;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+
+.content h3 {
+  font-size: 22px;
+  color: #5f7063;
+  margin-top: 30px;
+}
+
+.content p {
+  margin: 20px 0;
+}
+
+.content ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.content img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.content a {
+  display: inline-block;
+  margin-top: 1px;
+  color: #3c5d3a;
+  text-decoration: underline;
+  word-break: break-word;
+  font-weight: 500;
+}
+
+.content li::marker{
+    color:#5f7063;
+}
+
+
+
+/* highlighted box in content */
+
+.content-highlighted {
+    width: 90%;
+    max-width:900px;
+    border-radius:15px;
+    margin: 0 auto 80px auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(145deg, #93a597, #5f7063);
+    box-shadow:  4px 4px 8px #cfd5d1;
+    padding:40px;
+}
+
+.content-highlighted h2 {
+  font-size: 28px;
+  margin: 40px 0 20px;
+  color: #5f7063;
+  background-color:#fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+
+.content-highlighted h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.content-highlighted p {
+  margin: 20px 0;
+  color:#fff;
+}
+
+.content-highlighted ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.content-highlighted li {
+  margin-bottom: 10px;
+}
+
+.content-highlighted img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.content-highlighted a {
+  display: inline-block;
+  margin-top: 1px;
+  color: #fff;
+  text-decoration: underline;
+  word-break: break-word;
+  font-weight: 500;
+}
+
+
+/*------ floating buttons ------*/
+.float-btn {
+  background: white;
+  border-radius: 50%; /* buttons circular */
+  padding: 13px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /*transition for scaling, color change, shadow */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect for floating buttons */
+.float-btn:hover {
+  transform: scale(1.1); /* scaling- bigger */
+  background-color: #afbcb1; /* background color change */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* more shadow on hover */
+}
+
+/* Image/Icon styling */
+.float-btn img {
+  width: 30px;
+  height: 30px;
+  transition: filter 0.3s; /* transitions the icon colour change */
+}
+
+/* Icon color change on hover */
+.float-btn:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) contrast(100%); /* change icon colour to white on hover */
+}
+
+/* Home button position */
+.home-btn {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 100;
+}
+
+/* Arrow group position */
+.float-btn-group {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  z-index: 100;
+  justify-content: center;  /* centers buttons*/
+  flex-wrap: wrap;  /* wrap (goes on another line on smaller screens */
+}
+
