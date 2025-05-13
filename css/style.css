@@ -334,3 +334,46 @@ p{
   flex-wrap: wrap;  /* wrap (goes on another line on smaller screens */
 }
 
+
+/* Styled <a> link */
+.rounded-link {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: white;
+  color: black;
+  border-radius: 9999px; /* pill shape */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right:25px;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+/* Hover effect for link */
+.rounded-link:hover {
+  transform: scale(1.05);
+  background-color: #afbcb1;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* top nav */
+.nav{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-bottom: 45px;
+}
+
+
+.link-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  transition: filter 0.3s;
+}
+
+/* change icon color on hover */
+.rounded-link:hover .link-icon {
+  filter: brightness(0) saturate(100%) invert(100%) contrast(100%);
+}
